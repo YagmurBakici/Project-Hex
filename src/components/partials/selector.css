@@ -1,0 +1,17 @@
+.box {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 20vw;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: flex-start;
+  margin: 5rem;
+  padding: 1rem;
+  line-height: 1.6 !important;
+}
+
+p {
+  font-size: 1.5vw;
+}
