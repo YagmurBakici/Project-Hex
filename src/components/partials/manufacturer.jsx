@@ -5,7 +5,7 @@ export default class manufacturer extends Component {
   render() {
     return (
       <div>
-        <select class="dropdown">
+        <select className="dropdown">
           <option value="">Manufacturer</option>
           <option value="x">X</option>
           <option value="y">Y</option>

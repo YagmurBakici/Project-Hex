@@ -3,7 +3,7 @@ import Selector from "./../partials/selectorproducts";
 
 export default function selector() {
   return (
-    <div>
+    <React.Fragment>
       <Selector
         image="./logo.png"
         name="CMM PRODUCT2"
@@ -11,7 +11,6 @@ export default function selector() {
         Info2="lorem2 "
         Info3="lorem 3"
       />
-      ;
-    </div>
+    </React.Fragment>
   );
 }

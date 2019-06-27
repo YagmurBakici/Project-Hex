@@ -4,6 +4,7 @@ import Navbar from "./components/partials/navbar";
 import LogIn from "./components/partials/LogIn";
 import Admin from "./components/pages/admin";
 import Selector from "./components/pages/selector";
+import Page404 from "./components/pages/404";
 import Manufacturer from "./components/partials/manufacturer";
 import Size from "./components/partials/size";
 import Machine from "./components/partials/machine";
@@ -18,14 +19,14 @@ function App() {
       <header id="header_main">
         <Navbar />
       </header>
-      <div class="dropdownlist">
+      <div className="dropdownlist">
         <Manufacturer />
         <Machine />
         <Size />
       </div>
 
       <main id="mainbar">
-        <div class="boite">
+        <div className="boite">
           <Comp
             image="./logo.png"
             name="CMM PRODUCT1"
@@ -42,10 +43,11 @@ function App() {
           />
         </div>
         <Switch>
-          <Route exact path="/" />
-          <Route path="/Selector" component={Selector} />
+          <Route exact path="/" component={Comp} />
+          <Route path="/selector" component={Selector} />
           <Route path="/login" component={LogIn} />
           <Route path="/admin" component={Admin} />
+          <Route path="/*" component={Page404} />
         </Switch>
       </main>
     </React.Fragment>
